@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>زنگ تفریح 🛎️</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- صفحه ورود -->
+  <div id="login-screen" class="screen">
+    <div class="login-box">
+      <div class="logo">🛎️</div>
+      <h1>زنگ تفریح</h1>
+      <p class="tagline">اینجا همیشه زنگ تفریحه</p>
+
+      <input type="text" id="login-name" placeholder="اسمت چیه؟" maxlength="20" />
+
+      <p class="label">کلاس‌ت چیه؟</p>
+      <div class="class-options">
+        <button class="class-btn" data-class="901">۹۰۱</button>
+        <button class="class-btn" data-class="902">۹۰۲</button>
+        <button class="class-btn" data-class="903">۹۰۳</button>
+      </div>
+
+      <button id="enter-btn" disabled>ورود</button>
+    </div>
+  </div>
+
+  <!-- صفحه چت -->
+  <div id="chat-screen" class="screen hidden">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <span class="logo-small">🛎️</span>
+        <span>زنگ تفریح</span>
+      </div>
+      <nav id="rooms-nav"></nav>
+      <div class="sidebar-footer">
+        <span id="user-info"></span>
+        <button id="logout-btn" title="خروج">⎋</button>
+      </div>
+    </aside>
+
+    <main id="chat-area">
+      <header id="chat-header">
+        <button id="menu-btn">☰</button>
+        <span id="room-title"></span>
+      </header>
+      <div id="messages"></div>
+      <form id="message-form">
+        <input type="text" id="message-input" placeholder="پیامت رو بنویس..." autocomplete="off" />
+        <button type="submit">➤</button>
+      </form>
+      <div id="readonly-notice" class="hidden">🔒 فقط ادمین می‌تونه اینجا پیام بذاره</div>
+    </main>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
